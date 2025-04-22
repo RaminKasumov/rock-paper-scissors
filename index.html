@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="shortcut icon" href="https://www.theodinproject.com/assets/icons/odin-icon-22b41941.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="header">
+            <h1 class="title">ROCK PAPER SCISSORS</h1>
+        </div>
+        <div class="header-links">
+            <ul>
+                <li><a href="https://github.com/RaminKasumov/rock-paper-scissors">Source Code</a></li>
+                <li><a href="https://github.com/RaminKasumov">GitHub</a></li>
+                <li><a href="https://www.theodinproject.com/lessons/foundations-rock-paper-scissors">The Odin Project</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main">
+        <section class="scoreboard">
+            <div class="player-name">You</div>
+            <div class="score">
+                <div class="user-score" id="userScore">0</div>
+                <div class="score-separator">-</div>
+                <div class="computer-score" id="computerScore">0</div>
+            </div>
+            <div class="player-name">Computer</div>
+        </section>
+
+        <section class="choice">
+            <div class="scores-container">
+                <div class="buttons">
+                    <button class="btn-player-circle">
+                        <div class="player-sign" id="userSign">❔</div>
+                    </button>
+                </div>
+                <div class="choice-separator">VS.</div>
+                <div class="buttons">
+                    <button class="btn-player-circle">
+                        <div class="player-sign" id="computerSign">❔</div>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="buttons">
+            <button class="btn-circle" id="btnRock">
+                <div class="sign">✊</div>
+            </button>
+            <button class="btn-circle" id="btnPaper">
+                <div class="sign">✋</div>
+            </button>
+            <button class="btn-circle" id="btnScissors">
+                <div class="sign">✌</div>
+            </button>
+        </section>
+    </main>
+
+    <section class="game-over">
+        <div class="modal" id="modalEndgame">
+            <p class="modal-title" id="msgEndgame"></p>
+            <button class="btn-restart" id="btnRestart">Play again</button>
+        </div>
+        <div class="overlay" id="overlay"></div>
+    </section>
+
+    <footer class="footer">
+        <p>Copyright © The Odin Project 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
