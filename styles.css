@@ -89,10 +89,6 @@ nav {
     margin: 0 auto;
 }
 
-.score-box {
-    width: 170px;
-}
-
 .choice-separator {
     flex: 1;
     justify-content: center;
