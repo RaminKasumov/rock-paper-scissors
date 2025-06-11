@@ -2,8 +2,8 @@ let userScore = 0;
 let computerScore = 0;
 let roundWinner = '';
 
-const userScorePara = document.getElementById('userScore');
-const computerScorePara = document.getElementById('computerScore');
+const userScoreParam = document.getElementById('userScore');
+const computerScoreParam = document.getElementById('computerScore');
 const userSign = document.getElementById('userSign');
 const computerSign = document.getElementById('computerSign');
 const btnRock = document.getElementById('btnRock');
@@ -82,8 +82,8 @@ function updateChoices(playerChoice, computerChoice) {
 }
 
 function updateScore() {
-    userScorePara.textContent = `${userScore}`;
-    computerScorePara.textContent = `${computerScore}`;
+    userScoreParam.textContent = `${userScore}`;
+    computerScoreParam.textContent = `${computerScore}`;
 }
 
 function isGameOver() {
@@ -110,8 +110,8 @@ function restartGame() {
     userScore = 0;
     computerScore = 0;
     roundWinner = '';
-    userScorePara.textContent = '0';
-    computerScorePara.textContent = '0';
+    userScoreParam.textContent = '0';
+    computerScoreParam.textContent = '0';
     userSign.textContent = '❔';
     computerSign.textContent = '❔';
     modalEndgame.classList.remove('active');
